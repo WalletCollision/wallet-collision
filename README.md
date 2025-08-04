@@ -1,87 +1,77 @@
 <p align="center">
 	<img alt="logo"  src="./img/logo.png">
 </p>
-<h4 align="center">咸鱼私钥碰撞器</h4>
-<p align="center">寓意：逆境翻盘，咸鱼翻身</p>
+<h4 align="center">咸鱼私钥碰撞器（Trc20）</h4>
+<p align="center">版本：v1.0.0</p>
 <p align="center">
- 	  <img src="https://img.shields.io/badge/助记词-碰撞器-red.svg">
-      <img src="https://img.shields.io/badge/私钥-碰撞器-brightgreen.svg">
-      <img src="https://img.shields.io/badge/助记词-破解-yellow.svg">
-      <img src="https://img.shields.io/badge/私钥-破解-green.svg">
-      <img src="https://img.shields.io/badge/助记词-找回-blue.svg">
-      <img src="https://img.shields.io/badge/暴力碰撞-无任何后门-purple.svg">
- </p>
+    <img src="https://img.shields.io/badge/-私钥碰撞-red.svg" style="margin:0 5px">
+    <img src="https://img.shields.io/badge/-私钥破解-brightgreen.svg" style="margin:0 5px">
+    <img src="https://img.shields.io/badge/-助记词找回-yellow.svg" style="margin:0 5px">
+    <img src="https://img.shields.io/badge/-助记词破解-green.svg" style="margin:0 5px">
+    <img src="https://img.shields.io/badge/-区块链-blue.svg" style="margin:0 5px">
+    <img src="https://img.shields.io/badge/-波场-purple.svg" style="margin:0 5px">
+</p>
+
+## 项目简介
+
+咸鱼私钥碰撞器是一款专注于TRC20（波场链）的私钥碰撞智能系统。该软件通过遵循BIP39协议随机生成12位助记词，并根据生成后的地址与导入的监控地址进行比较，以找回早期低价买入后忘记助记词的TRC20钱包。
+
+## 界面预览
+
+<p><img alt="logo"  src="./img/index1.png"></p>
+<p><img alt="logo"  src="./img/index2.png"></p>
+
+## 安装步骤
+
+### 1.下载软件包：
+<p>
+下载并解压安装包，<a href="https://github.com/EthCollision/WalletExchange/releases/download/wallet2.0.0/trx_collision2.0.zip">点击下载</a>
+</p>
+
+### 2.私钥碰撞：
+
+<p>1.将需要碰撞的钱包地址放入`input`目录(目前自带60w大额钱包地址)</p>
+<p>2.运行`wallet.exe`启动程序</p>
+<p>3.运行成功后，【开启】 按钮即可</p>
+
+### 3.助记词找回：
+<p>1.输入要找回的【目标钱包】地址</p>
+<p>2.选择每个助记词【规则】，注意，助记词越准确，顺序越对，找回速度越快</p>
+<p>3.点击【开启】按钮，等待结果</p>
+<p><img src="https://img.shields.io/badge/-规则解释如下：-red.svg" style="margin:0 5px"></p>
+<p><strong>精确规则</strong>：如果该位置助记词记得，并且助记词属于完全正确，可以选择该模式</p>
+<p><strong>随机规则</strong>：如果该位置的助记词忘记了，可以选择该模式</p>
+<p><strong>以什么开头规则</strong>：如果该位置的助记词记得以为什么开头的话，可以选择该模式，例如:如果助记词是shop，可以输入s或者sh等</p>
+<p><strong>以什么结尾规则</strong>：如果该位置的助记词记得以为什么结尾的话，可以选择该模式，例如:如果助记词是shop，可以输入p或者op等</p>
+<p><strong>包含规则</strong>：如果该位置的助记词记得是含有某一个字母的话，可以选择该模式，例如:如果助记词是shop，可以输入p或者s等</p>
 
 
-
-##  1.项目简介
-
-大家是否经常有看到一些沉睡多年的钱包苏醒异动新闻，往往这些钱包都是早期单价比较低的时候买入忘记助记词了的，这些都是通过助记词碰撞来找回。
-
-本软件通过遵循BIP39协议随机生成12位助记词，然后根据生成后的地址和导入的监控地址比较，如果一样则密钥一样
-
-<img alt="logo"  src="./img/bj.png">
-
-## 2.适用人群
-
-1.助记词/密钥丢失，现需要找回
-
-2.有闲置电脑的人群（启动让程序自动运行，无需人工守护）
-
-3.佛系运行者，靠的就是运气
-
-大家试想：
-
-一个钱包总共12个助记词，然后每一位助记词都有2048种可能。总数也就是12的2048次方接近宇宙的原子数量了。
-
-按楼主的电脑配置，1秒钟4000次碰撞，一天大概是3.4亿次，虽然离12的2048次方还是差很远。但是至少碰撞了就有机会碰撞上，玩的就是运气。
-
-类似：七星彩大家都知道中奖的概率很低，但是只要购买了才有机会中奖，不然都是纸上谈兵
-
-## 3.安装包
-
-   [点击这里进行下载](https://github.com/EthCollision/wallet_collission/releases/download/v1.0.0/wallet1.0.0.rar)
-
-​    联系客服获取安装包 -》在线客服Telegram：<a href='https://t.me/web3_dev_gg' target="_blank" >咸鱼客服 </a>
-
-​    赠送60w监控地址
-
-## 4.软件优势
-   1、支持 ETH、BSC、BASE、Polygon、OP、Avalanche 等以太坊虚拟机 (EVM) 链
-
-   2、持续不断迭代更新
-
-   3、监控大额钱包持续更新
-
-   4、支持离线断网运行
-
-   5、价格优势，相比市面上的其他碰撞器价格优化很多
-
-## 5.启动步骤
-
-1.data为数据目录
-
-2.input为监控钱包目录。把需要碰撞的钱包放入到input目录即可
-
-3.如果碰撞成功了，data里面的 SUCCESS_WALLET.txt会保存私钥，可以点击模拟成功来测试
-
-4.然后点击 wallet.exe 运行即可
-
-<img alt="logo"  src="./img/mulu.png">
-
-## 6.界面显示
-
-<img alt="logo"  src="./img/jiemian.png">
-
-## 7.联系我们（Telegram）
-
-在线访问：<a href='https://t.me/web3_dev_gg' target="_blank" >咸鱼客服 </a>
-
-<img alt="logo"   src="./img/tg.png">
+## 运行示例
+<table>
+    <tr>
+        <td ><img alt="logo"  src="./img/lizi1.png"></td>
+        <td ><img alt="logo"  src="./img/lizi2.png"></td>
+    </tr>
+    <tr>
+        <td ><img alt="logo"  src="./img/lizi3.png"></td>
+        <td ><img alt="logo"  src="./img/lizi4.png"></td>
+    </tr>
+</table>
 
 
+## 目录结构
+
+- `data`：数据目录，用于存储程序运行过程中的数据
+- `input`：碰撞钱包目录，存放需要碰撞的钱包地址
+- `success`：碰撞成功后的存储目录，存放成功碰撞的钱包信息，SUCCESS_WALLET.txt`会保存助记词
 
 
+## 联系我们
 
+如有任何问题，请联系我们的在线客服：
+- Telegram：[咸鱼客服](https://t.me/web3_dev_gg) <br>
+  <img alt="logo"   src="./img/tg.png">
+## 注意事项
 
-
+- 助记词碰撞存在一定的风险和不确定性，且可能涉及法律和道德问题。用户在尝试找回钱包时，应充分了解相关风险，并确保自己的行为符合法律法规。
+- 由于网络原因，部分链接可能无法正常访问。请检查链接的合法性，并适当重试。
